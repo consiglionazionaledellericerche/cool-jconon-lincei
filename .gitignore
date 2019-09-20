@@ -1,0 +1,14 @@
+*.iml
+.idea
+target
+*.sublime-workspace
+activemq-data
+.classpath
+.project
+.settings/
+/logs/
+/docker-compose/jconon_logs
+/docker-compose/contentstore
+/docker-compose/alfresco_logs
+/docker-compose/pgdata
+/node_modules/

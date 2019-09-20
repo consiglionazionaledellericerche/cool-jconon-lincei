@@ -1,0 +1,13 @@
+{
+  "name": "cool-jconon-lincei",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Marco Spasiano",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-watch": "^4.3.10"
+  }
+}

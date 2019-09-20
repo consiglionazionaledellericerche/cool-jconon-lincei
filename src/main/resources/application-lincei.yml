@@ -1,0 +1,25 @@
+repository:
+  base:
+    url: http://localhost:9080/alfresco/
+user:
+  admin:
+    password: admin
+server:
+  servlet:
+    context-path: /
+rrd:
+  path: remote-shared,remote-lincei
+  skipmd5: true
+
+ipa:
+  url:
+    base: https://www.indicepa.gov.it/public-services/opendata-read-service.php
+    amministrazioni: ${ipa.url.base}?dstype=FS&filename=amministrazioni.txt
+
+hazelcast:
+  port: 1234
+  multicast:
+    port: 12345
+  instance:
+    name: lincei
+
