@@ -6,7 +6,7 @@ user:
     password: admin
 server:
   servlet:
-    context-path:
+    context-path: /
 rrd:
   path: remote-shared,remote-lincei
   skipmd5: true

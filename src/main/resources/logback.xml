@@ -36,6 +36,7 @@
     </appender>
 
     <logger name="it.cnr" level="INFO"/>
+    <logger name="com.hazelcast.internal.diagnostics.HealthMonitor" level="WARN"/>
     <logger name="org.springframework.web.filter" level="INFO"/>
 
     <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">

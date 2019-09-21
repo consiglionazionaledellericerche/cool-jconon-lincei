@@ -39,7 +39,7 @@
         "GET": {
             "whitelist": {
                 "user": [],
-                "group": ["GROUP_ALFRESCO_ADMINISTRATORS"]
+                "group": ["GROUP_ALFRESCO_ADMINISTRATORS", "GROUP_CONCORSI"]
             }
         },
         "POST": {
@@ -50,7 +50,7 @@
         },
         "DELETE": {
             "whitelist": {
-                "group": ["GROUP_ALFRESCO_ADMINISTRATORS"]
+                "group": ["GROUP_ALFRESCO_ADMINISTRATORS", "GROUP_CONCORSI"]
             }
         }
     },
@@ -58,7 +58,7 @@
         "GET": {
             "whitelist": {
                 "user": [],
-                "group": ["GROUP_ALFRESCO_ADMINISTRATORS"]
+                "group": ["GROUP_ALFRESCO_ADMINISTRATORS", "GROUP_CONCORSI"]
             }
         }
     },
@@ -66,7 +66,7 @@
         "GET": {
             "whitelist": {
                 "user": [],
-                "group": ["GROUP_ALFRESCO_ADMINISTRATORS"]
+                "group": ["GROUP_ALFRESCO_ADMINISTRATORS", "GROUP_CONCORSI"]
             }
         }
     },
@@ -74,7 +74,7 @@
         "GET": {
             "whitelist": {
                 "user": [],
-                "group": ["GROUP_ALFRESCO_ADMINISTRATORS"]
+                "group": ["GROUP_ALFRESCO_ADMINISTRATORS", "GROUP_CONCORSI"]
             }
         }
     },
@@ -87,7 +87,7 @@
         "DELETE": {
             "whitelist": {
                 "user": [],
-                "group": ["GROUP_ALFRESCO_ADMINISTRATORS"]
+                "group": ["GROUP_ALFRESCO_ADMINISTRATORS", "GROUP_CONCORSI"]
             }
         },
         "GET": {
@@ -651,13 +651,13 @@
         "POST": {
             "whitelist": {
                 "user": [],
-                "group": ["GROUP_ALFRESCO_ADMINISTRATORS"]
+                "group": ["GROUP_ALFRESCO_ADMINISTRATORS", "GROUP_CONCORSI"]
             }
         },
         "DELETE": {
             "whitelist": {
                 "user": [],
-                "group": ["GROUP_ALFRESCO_ADMINISTRATORS"]
+                "group": ["GROUP_ALFRESCO_ADMINISTRATORS", "GROUP_CONCORSI"]
             }
         }
     },

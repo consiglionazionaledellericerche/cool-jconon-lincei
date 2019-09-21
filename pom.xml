@@ -30,7 +30,7 @@
     <name>Concorsi On-Line Accademia dei Lincei</name>
 
     <properties>
-        <cool.jconon.version>4.2.81</cool.jconon.version>
+        <cool.jconon.version>4.2.82</cool.jconon.version>
         <cool.mode>development</cool.mode>
         <start-class>it.cnr.si.cool.jconon.CoolJcononApplication</start-class>
         <hazelcast.version>3.7.2</hazelcast.version>
