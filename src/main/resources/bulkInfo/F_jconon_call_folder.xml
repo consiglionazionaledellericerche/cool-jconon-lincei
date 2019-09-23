@@ -45,17 +45,17 @@
     <fieldProperty class="input-xxlarge" inputType="TEXTAREA" label="label.jconon_call_descrizione_ridotta_en"
                    name="descrizione_ridotta_en" property="jconon_call:descrizione_ridotta_en" widget="ui.wysiwyg"/>
 
-    <fieldProperty class="input-xxlarge" i18n="true" inputType="TEXT" label="label.jconon_call_sede" name="sede"
+    <fieldProperty class="span12" i18n="true" inputType="TEXT" label="label.jconon_call_sede" name="sede"
                    property="jconon_call:sede">
         <jsonvalidator required="false"/>
     </fieldProperty>
-    <fieldProperty class="input-xxlarge" inputType="TEXT" label="label.jconon_call_sede_en" name="sede_en"
+    <fieldProperty class="span12" inputType="TEXT" label="label.jconon_call_sede_en" name="sede_en"
                    property="jconon_call:sede_en"/>
-    <fieldProperty class="input-xlarge" i18n="true" inputType="TEXT" label="label.jconon_call_struttura_destinataria"
+    <fieldProperty class="span12" i18n="true" inputType="TEXT" label="label.jconon_call_struttura_destinataria"
                    name="struttura_destinataria" property="jconon_call:struttura_destinataria">
         <jsonvalidator required="true"/>
     </fieldProperty>
-    <fieldProperty class="input-xlarge" inputType="TEXT" label="label.jconon_call_struttura_destinataria_en"
+    <fieldProperty class="span12" inputType="TEXT" label="label.jconon_call_struttura_destinataria_en"
                    name="struttura_destinataria_en" property="jconon_call:struttura_destinataria_en"/>
 
     <fieldProperty class="multiselect very-input-xlarge" i18n="true" inputType="SELECT"
