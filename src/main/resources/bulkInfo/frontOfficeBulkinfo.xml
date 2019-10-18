@@ -93,12 +93,8 @@
                    visible="true" class="span8" widget="ui.select">
         <jsonlist>
             <listElement defaultLabel="Tutti i Bandi" key="Tutti i Bandi" label="Tutti i Bandi"/>
-            <listElement defaultLabel="Discipline Umanistiche" key="F:jconon_call:discipline_umanistiche" label="Discipline Umanistiche"/>
-            <listElement defaultLabel="Borse di Studio - Umanistiche" key="F:jconon_call:du_bstudio" label="Borse di Studio - Umanistiche"/>
-            <listElement defaultLabel="Premi - Umanistiche" key="F:jconon_call:du_premi" label="Direttori"/>
-            <listElement defaultLabel="Discipline Scientifiche" key="F:jconon_call:discipline_scientifiche" label="Discipline Scientifiche"/>
-            <listElement defaultLabel="Borse di Studio - Scientifiche" key="F:jconon_call:ds_bstudio" label="Borse di Studio - Scientifiche"/>
-            <listElement defaultLabel="Premi - Scientifiche" key="F:jconon_call:ds_premi" label="Scientifiche"/>
+            <listElement defaultLabel="Bandi" key="F:jconon_call:borse" label="Bandi"/>
+            <listElement defaultLabel="Premi" key="F:jconon_call:premi" label="Premi"/>
         </jsonlist>
         <jsonvalidator requiredWidget="true"/>
     </fieldProperty>

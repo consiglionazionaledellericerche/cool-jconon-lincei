@@ -18,6 +18,7 @@ ipa:
 
 hazelcast:
   port: 1234
+  autoincrement: false
   multicast:
     port: 12345
   instance:

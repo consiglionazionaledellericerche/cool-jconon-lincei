@@ -35,6 +35,8 @@
                    prefix="jconon_documento_riconoscimento" />
         <namespace uri="http://www.cnr.it/model/jconon_attachment/tesi_laurea/cmis"
                    prefix="jconon_tesi_laurea" />
+        <namespace uri="http://www.cnr.it/model/jconon_attachment/tesi_dottorato/cmis"
+                   prefix="jconon_tesi_dottorato" />
         <namespace uri="http://www.cnr.it/model/jconon_attachment/allegato_generico/cmis"
                    prefix="jconon_allegato_generico" />
         <namespace uri="http://www.cnr.it/model/jconon_attachment/nulla_osta_altro_ente/cmis"
@@ -627,6 +629,67 @@
                 </property>
             </properties>
         </type>
+
+        <type name="jconon_pubblicazione:progetti_di_ricerca">
+            <title>Progetto di ricerca con benestare del responsabile della ricerca e del direttore dell'Istituto o dipartimento</title>
+            <description>Progetto di ricerca con benestare del responsabile della ricerca e del direttore dell'Istituto o dipartimento</description>
+            <parent>jconon_attachment:document_multi</parent>
+        </type>
+        <type name="jconon_pubblicazione:attestati">
+            <title>Attestati e ogni eventuale altro titolo ritenuto utile</title>
+            <description>Attestati e ogni eventuale altro titolo ritenuto utile</description>
+            <parent>jconon_attachment:document_multi</parent>
+        </type>
+        <type name="jconon_tesi_dottorato:attachment">
+            <title>Tesi di dottorato</title>
+            <description>Tesi di dottorato</description>
+            <parent>jconon_attachment:document_mono</parent>
+            <properties>
+                <property name="jconon_tesi_dottorato:titolo">
+                    <title>Titolo Tesi di dottorato</title>
+                    <description>Titolo Tesi di dottorato</description>
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <atomic>true</atomic>
+                        <stored>false</stored>
+                        <tokenised>both</tokenised>
+                    </index>
+                </property>
+                <property name="jconon_tesi_dottorato:materia">
+                    <title>Materia Tesi di dottorato</title>
+                    <description>Materia Tesi di dottorato</description>
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <atomic>true</atomic>
+                        <stored>false</stored>
+                        <tokenised>both</tokenised>
+                    </index>
+                </property>
+                <property name="jconon_tesi_dottorato:relatore">
+                    <title>Relatore Tesi di dottorato</title>
+                    <description>Relatore Tesi di dottorato</description>
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <atomic>true</atomic>
+                        <stored>false</stored>
+                        <tokenised>both</tokenised>
+                    </index>
+                </property>
+            </properties>
+            <mandatory-aspects>
+                <aspect>jconon_attachment:generic_document</aspect>
+            </mandatory-aspects>
+        </type>
+        <type name="jconon_tesi_dottorato:lettera">
+            <title>Lettera di presentazione del Direttore dell’Istituto o del Dipartimento in cui è stato conseguito il Dottorato di Ricerca</title>
+            <description>Lettera di presentazione del Direttore dell’Istituto o del Dipartimento in cui è stato conseguito il Dottorato di Ricerca</description>
+            <parent>jconon_attachment:document_mono</parent>
+        </type>
+
+
         <type name="jconon_domanda_facsimile:attachment">
             <title>Allegato A - Domanda</title>
             <description>Allegato A - Domanda</description>

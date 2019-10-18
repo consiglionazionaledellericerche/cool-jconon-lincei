@@ -422,41 +422,32 @@
                     <type>d:text</type>
                     <mandatory>false</mandatory>
                 </property>
+                <property name="jconon_call:disciplina">
+                    <title>Disciplina</title>
+                    <description>Disciplina</description>
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <atomic>true</atomic>
+                        <stored>false</stored>
+                        <tokenised>both</tokenised>
+                    </index>
+                </property>
             </properties>
         </type>
-        <type name="jconon_call:discipline_umanistiche">
-            <title>Discipline Umanistiche</title>
+        <type name="jconon_call:borse">
+            <title>Borse</title>
             <parent>jconon_call:folder</parent>
             <mandatory-aspects>
                 <aspect>jconon_call:aspect_tipo_selezione</aspect>
             </mandatory-aspects>
         </type>
-        <type name="jconon_call:du_bstudio">
-            <title>Borse di Studio</title>
-            <description>a) Inserisci una nuova Borsa di Studio</description>
-            <parent>jconon_call:discipline_umanistiche</parent>
-        </type>
-        <type name="jconon_call:du_premi">
+        <type name="jconon_call:premi">
             <title>Premi</title>
-            <description>a) Inserisci una nuovo Premio</description>
-            <parent>jconon_call:discipline_umanistiche</parent>
-        </type>
-        <type name="jconon_call:discipline_scientifiche">
-            <title>Discipline Scientifiche</title>
             <parent>jconon_call:folder</parent>
             <mandatory-aspects>
                 <aspect>jconon_call:aspect_tipo_selezione</aspect>
             </mandatory-aspects>
-        </type>
-        <type name="jconon_call:ds_bstudio">
-            <title>Borse di Studio</title>
-            <description>a) Inserisci una nuova Borsa di Studio</description>
-            <parent>jconon_call:discipline_scientifiche</parent>
-        </type>
-        <type name="jconon_call:ds_premi">
-            <title>Premi</title>
-            <description>a) Inserisci una nuovo Premio</description>
-            <parent>jconon_call:discipline_scientifiche</parent>
         </type>
     </types>
     <aspects>

@@ -817,32 +817,18 @@
             }
         }
     },
-    "F:jconon_call:du_bstudio": {
+    "F:jconon_call:borse": {
         "PUT": {
             "whitelist": {
                 "user": [],
-                "group": ["GROUP_CONCORSI", "GROUP_GESTORI_F_JCONON_CALL_DISCIPLINE_UMANISTICHE","GROUP_ALFRESCO_ADMINISTRATORS"]
+                "group": ["GROUP_CONCORSI", "GROUP_GESTORI_F_JCONON_CALL_BANDI","GROUP_ALFRESCO_ADMINISTRATORS"]
             }
         }
     },
-    "F:jconon_call:du_premi": {
+    "F:jconon_call:premi": {
         "PUT": {
             "whitelist": {
-                "group": ["GROUP_CONCORSI", "GROUP_GESTORI_F_JCONON_CALL_DISCIPLINE_UMANISTICHE","GROUP_ALFRESCO_ADMINISTRATORS"]
-            }
-        }
-    },
-    "F:jconon_call:ds_bstudio": {
-        "PUT": {
-            "whitelist": {
-                "group": ["GROUP_GESTORI_F_JCONON_CALL_DISCIPLINE_SCIENTIFICHE", "GROUP_CONCORSI","GROUP_ALFRESCO_ADMINISTRATORS"]
-            }
-        }
-    },
-    "F:jconon_call:ds_premi": {
-        "PUT": {
-            "whitelist": {
-                "group": ["GROUP_GESTORI_F_JCONON_CALL_DISCIPLINE_SCIENTIFICHE","GROUP_CONCORSI","GROUP_ALFRESCO_ADMINISTRATORS"]
+                "group": ["GROUP_CONCORSI", "GROUP_GESTORI_F_JCONON_CALL_PREMI","GROUP_ALFRESCO_ADMINISTRATORS"]
             }
         }
     }

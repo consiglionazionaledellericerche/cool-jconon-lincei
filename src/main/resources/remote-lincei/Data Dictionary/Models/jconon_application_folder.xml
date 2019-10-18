@@ -1729,6 +1729,25 @@
                 </property>
             </properties>
         </aspect>
+
+        <aspect name="jconon_application:posizione_attualmente_ricoperta">
+            <title>Posizione o qualifica scientifica attualmente ricoperta</title>
+            <parent>jconon_application:aspects</parent>
+            <properties>
+                <property name="jconon_application:posizione_attualmente_ricoperta_text">
+                    <title>Posizione o qualifica scientifica attualmente ricoperta:</title>
+                    <description>inputType:TEXTAREA class:vh-25</description>
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <atomic>true</atomic>
+                        <stored>false</stored>
+                        <tokenised>both</tokenised>
+                    </index>
+                </property>
+            </properties>
+        </aspect>
+
         <!-- Aspect per i punteggi conseguiti -->
         <aspect name="jconon_application:aspect_punteggi">
             <title>Punteggi conseguiti nelle prove</title>

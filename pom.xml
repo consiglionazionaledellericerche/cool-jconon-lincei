@@ -22,7 +22,7 @@
     <parent>
         <groupId>it.cnr.si.cool.jconon</groupId>
         <artifactId>cool-jconon-parent</artifactId>
-        <version>4.2.81</version>
+        <version>4.2.88</version>
     </parent>
 
     <artifactId>cool-jconon-lincei</artifactId>
@@ -30,7 +30,6 @@
     <name>Concorsi On-Line Accademia dei Lincei</name>
 
     <properties>
-        <cool.jconon.version>4.2.82</cool.jconon.version>
         <cool.mode>development</cool.mode>
         <start-class>it.cnr.si.cool.jconon.CoolJcononApplication</start-class>
         <hazelcast.version>3.7.2</hazelcast.version>
@@ -42,7 +41,7 @@
         <dependency>
             <groupId>it.cnr.si.cool.jconon</groupId>
             <artifactId>cool-jconon-webapp-resources</artifactId>
-            <version>${cool.jconon.version}</version>
+            <version>${parent.version}</version>
         </dependency>
         <dependency>
             <groupId>com.hazelcast</groupId>
@@ -137,7 +136,7 @@
                                         <artifactItem>
                                             <groupId>it.cnr.si.cool.jconon</groupId>
                                             <artifactId>cool-jconon-webapp-resources</artifactId>
-                                            <version>${cool.jconon.version}</version>
+                                            <version>${parent.version}</version>
                                             <outputDirectory>${project.build.directory}/javascript-exploded
                                             </outputDirectory>
                                             <includes>**/*.js</includes>

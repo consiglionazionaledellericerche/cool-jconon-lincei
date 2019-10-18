@@ -19,7 +19,6 @@
           cmisQueryName="jconon_call:folder" cmisTypeName="F:jconon_call:folder" longDescription="Bando"
           shortDescription="Bando" xsi:schemaLocation="http://www.cnr.it/schema/BulkInfo_v2 BulkInfo_v2">
 
-    <cmisImplementsName join="false" name="P:jconon_call:aspect_macro_call"/>
     <cmisImplementsName name="P:jconon_call:aspect_lingue_da_conoscere"/>
     <cmisImplementsName name="P:jconon_call:aspect_punteggi"/>
 
@@ -164,7 +163,16 @@
         </jsonlist>
         <jsonvalidator requiredWidget="true"/>
     </fieldProperty>
-
+    <fieldProperty inputType="RADIOGROUP"
+                   label="label.jconon_call_disciplina" name="disciplina" property="jconon_call:disciplina"
+                   widget="ui.radio">
+        <jsonlist>
+            <listElement defaultLabel="Scientifiche" key="DS" label="label.jconon_call_disciplina.DS"/>
+            <listElement defaultLabel="Umanistiche" key="DM" label="label.jconon_call_disciplina.DM"/>
+            <listElement defaultLabel="Scientifiche/Umanistiche" key="DMS" label="label.jconon_call_disciplina.DMS"/>
+        </jsonlist>
+        <jsonvalidator requiredWidget="true"/>
+    </fieldProperty>
 
     <formFieldProperty name="codice"/>
     <formFieldProperty name="descrizione"/>
@@ -198,9 +206,7 @@
     <form name="affix_sezione_1">
         <formFieldProperty name="codice"/>
         <formFieldProperty name="numero_posti"/>
-        <formFieldProperty name="aspect_macro_call"/>
-        <formFieldProperty name="numero_max_domande"/>
-        <formFieldProperty name="path_macro_call"/>
+        <formFieldProperty name="disciplina"/>
         <formFieldProperty name="descrizione"/>
         <formFieldProperty name="descrizione_en"/>
         <formFieldProperty name="descrizione_ridotta"/>
@@ -278,7 +284,8 @@
             <jsonvalidator digits="true"/>
         </formFieldProperty>
         <formFieldProperty class="criteria-gte" label="label.jconon_call_da_data" name="filters-da_data"
-                           placeholder="placeholder.jconon_call_da_data" property="jconon_call:data_fine_invio_domande_index"
+                           placeholder="placeholder.jconon_call_da_data"
+                           property="jconon_call:data_fine_invio_domande_index"
                            widget="ui.datepicker"/>
         <formFieldProperty class="criteria-lte" name="filters-a_data" placeholder="placeholder.jconon_call_a_data"
                            property="jconon_call:data_fine_invio_domande_index" widget="ui.datepicker"/>
@@ -319,7 +326,11 @@
                 property="root.jconon_call:numero_posti">
             <jsonvalidator digits="true"/>
         </formFieldProperty>
-
+        <formFieldProperty
+                class="criteria-equals btn-block"
+                parentGroupClass="btn-group-vertical"
+                name="disciplina"
+                property="root.jconon_call:disciplina"/>
         <formFieldProperty
                 class="criteria-gte span10"
                 label="label.jconon_call_da_data"
@@ -375,6 +386,7 @@
     <columnFieldProperty label="label.column.jconon_call_area_scientifica" name="area_scientifica"/>
     <columnFieldProperty label="label.column.jconon_call_settore_scientifico_tecnologico"
                          name="settore_scientifico_tecnologico"/>
+    <columnFieldProperty name="disciplina"/>
 
     <columnSet name="home">
         <columnFieldProperty property="cmis:objectId" name="objectId" inSelect="false"/>
@@ -397,6 +409,7 @@
         <columnFieldProperty inSelect="false" name="elenco_settori_tecnologici"
                              property="jconon_call:elenco_settori_tecnologici"/>
         <columnFieldProperty inSelect="false" name="numero_max_domande" property="jconon_call:numero_max_domande"/>
+        <columnFieldProperty name="disciplina"/>
     </columnSet>
 
 
@@ -421,9 +434,11 @@
         <columnFieldProperty inSelect="false" name="elenco_settori_tecnologici"
                              property="jconon_call:elenco_settori_tecnologici"/>
         <columnFieldProperty inSelect="false" name="numero_max_domande" property="jconon_call:numero_max_domande"/>
+        <columnFieldProperty name="disciplina"/>
     </columnSet>
     <findFieldProperty label="label.find.jconon_call_codice" name="codice"/>
     <findFieldProperty label="label.find.jconon_call_descrizione" name="descrizione"/>
+    <findFieldProperty name="disciplina"/>
     <findFieldProperty label="label.find.jconon_call_sede" name="sede" inputType="TEXT"/>
     <findFieldProperty label="label.find.jconon_call_struttura_destinataria" name="struttura_destinataria"
                        inputType="TEXT"/>
