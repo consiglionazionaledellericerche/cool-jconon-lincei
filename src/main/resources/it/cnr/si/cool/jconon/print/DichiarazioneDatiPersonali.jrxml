@@ -1,21 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  ~ Copyright (C) 2019  Consiglio Nazionale delle Ricerche
-  ~
-  ~     This program is free software: you can redistribute it and/or modify
-  ~     it under the terms of the GNU Affero General Public License as
-  ~     published by the Free Software Foundation, either version 3 of the
-  ~     License, or (at your option) any later version.
-  ~
-  ~     This program is distributed in the hope that it will be useful,
-  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~     GNU Affero General Public License for more details.
-  ~
-  ~     You should have received a copy of the GNU Affero General Public License
-  ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
-  -->
-
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DichiarazioneSostitutiva" pageWidth="595" pageHeight="842" columnWidth="515" leftMargin="40" rightMargin="40" topMargin="28" bottomMargin="28" scriptletClass="net.sf.jasperreports.engine.JRDefaultScriptlet" uuid="6fccba99-1156-4661-99e5-3238586360bb">
 	<property name="ireport.zoom" value="1.5"/>
 	<property name="ireport.x" value="0"/>
@@ -359,7 +342,7 @@
 				<textElement textAlignment="Justified" verticalAlignment="Top" markup="none">
 					<font isBold="false" isUnderline="false"/>
 				</textElement>
-				<textFieldExpression><![CDATA["I dati di contatto del Responsabile della protezione dei dati sono: PEC: accademianazionaledeilincei@postecert.it presso Accademia Nazionale dei Lincei - Via della Lungara n.10 - 00165 Roma."]]></textFieldExpression>
+				<textFieldExpression><![CDATA["I dati di contatto del Responsabile della protezione dei dati sono: E-mail: angelo.cagnazzo@lincei.it - (39) 06 68027252 - PEC: accademianazionaledeilincei@postecert.it presso Accademia Nazionale dei Lincei - Via della Lungara n.10 - 00165 Roma."]]></textFieldExpression>
 			</textField>
 		</band>
 		<band height="20" splitType="Stretch">
@@ -426,47 +409,10 @@
 				<textFieldExpression><![CDATA["In qualità di interessato, ricorrendone i presupposti, il candidato può presentare reclamo al Garante per la protezione dei dati personali quale autorità di controllo secondo le procedure previste."]]></textFieldExpression>
 			</textField>
 		</band>
-		<band height="22" splitType="Stretch">
-			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="22" y="5" width="492" height="15" isRemoveLineWhenBlank="true" uuid="524a1ee2-0bb8-49c8-be1e-ffdc8fc51ffe"/>
-				<textElement verticalAlignment="Top"/>
-				<textFieldExpression><![CDATA[($F{jconon_application:sesso}.equals("F")?"La sottoscritta":"Il sottoscritto") +
-" " + $F{jconon_application:cognome}.toUpperCase() + " " + $F{jconon_application:nome}.toUpperCase() +
-($F{jconon_application:sesso}.equals("F")?" nata a ":" nato a ") +
-$F{jconon_application:comune_nascita} + " (" + $F{jconon_application:provincia_nascita} +")" +
-" il " + new SimpleDateFormat("dd/MM/yyyy").format(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").parse($F{jconon_application:data_nascita}))]]></textFieldExpression>
-			</textField>
-		</band>
-		<band height="22" splitType="Stretch">
-			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="22" y="5" width="492" height="15" isRemoveLineWhenBlank="true" uuid="524a1ee2-0bb8-49c8-be1e-ffdc8fc51ffe"/>
-				<textElement verticalAlignment="Top"/>
-				<textFieldExpression><![CDATA["residente a " +
-$F{jconon_application:comune_residenza} +
-" (" + $F{jconon_application:provincia_residenza} +")" +
-" in " + $F{jconon_application:indirizzo_residenza} +
-" num. " + $F{jconon_application:num_civico_residenza}]]></textFieldExpression>
-			</textField>
-		</band>
-		<band height="22" splitType="Stretch">
-			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="22" y="5" width="492" height="15" isRemoveLineWhenBlank="true" uuid="524a1ee2-0bb8-49c8-be1e-ffdc8fc51ffe"/>
-				<textElement verticalAlignment="Top"/>
-				<textFieldExpression><![CDATA["Per presa visione"]]></textFieldExpression>
-			</textField>
-		</band>
-		<band height="31" splitType="Stretch">
-			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="22" y="10" width="156" height="15" isRemoveLineWhenBlank="true" uuid="524a1ee2-0bb8-49c8-be1e-ffdc8fc51ffe"/>
-				<textElement verticalAlignment="Top"/>
-				<textFieldExpression><![CDATA["Data " + new SimpleDateFormat("dd/MM/yyyy").format(new Date())]]></textFieldExpression>
-			</textField>
-			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="296" y="10" width="156" height="15" isRemoveLineWhenBlank="true" uuid="a9d882d8-63a5-4d8e-ae1a-72e0dd435298"/>
-				<textElement verticalAlignment="Top"/>
-				<textFieldExpression><![CDATA["(Firma)"]]></textFieldExpression>
-			</textField>
-		</band>
+		<band height="22" splitType="Stretch"/>
+		<band height="22" splitType="Stretch"/>
+		<band height="22" splitType="Stretch"/>
+		<band height="31" splitType="Stretch"/>
 	</detail>
 	<pageFooter>
 		<band height="40">
