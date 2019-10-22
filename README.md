@@ -3,8 +3,8 @@
   <a href="https://github.com/consiglionazionaledellericerche/cool-jconon-lincei/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/License-AGPL%20v3-blue.svg" alt="Cool Jconon is released under the GNU AGPL v3 license." />
   </a>
-  <a href="https://mvnrepository.com/artifact/it.cnr.si/cool-jconon-lincei">
-    <img alt="Maven Central" src="https://img.shields.io/maven-central/v/it.cnr.si/cool-jconon-lincei.svg?style=flat" alt="Current version on maven central.">
+  <a href="https://mvnrepository.com/artifact/it.cnr.si.cool.jconon/cool-jconon-lincei">
+    <img alt="Maven Central" src="https://img.shields.io/maven-central/v/it.cnr.si.cool.jconon/cool-jconon-lincei.svg?style=flat" alt="Current version on maven central.">
   </a>
 </p>
 
