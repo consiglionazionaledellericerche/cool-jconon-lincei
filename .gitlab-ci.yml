@@ -82,7 +82,10 @@ docker-build-push-master:
     - docker tag $CONTAINER_TEST_IMAGE $CI_REGISTRY/$CONTAINER_RELEASE_IMAGE
     - docker push $CI_REGISTRY/$CONTAINER_RELEASE_IMAGE
   only:
-    - master
+    variables:
+      - $CI_COMMIT_MESSAGE !~ /prepare release/ && $CI_COMMIT_MESSAGE !~ /prepare for next development iteration/
+    refs:
+      - master
 
 
 #Ad ogni nuovo commit sul branch viene fatta la push sul docker registry locale.
