@@ -844,6 +844,16 @@
                         <tokenised>both</tokenised>
                     </index>
                 </property>
+                <property name="jconon_application:punteggio_dottorato">
+                    <title>Punteggio Dottorato</title>
+                    <description>Punteggio Dottorato</description>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <atomic>true</atomic>
+                        <stored>false</stored>
+                        <tokenised>both</tokenised>
+                    </index>
+                </property>
             </properties>
         </aspect>
         <aspect name="jconon_application:aspect_dottorato_not_required">
@@ -1112,6 +1122,40 @@
                 </property>
             </properties>
         </aspect>
+
+        <aspect name="jconon_application:aspect_possesso_cittadinanza_generico">
+            <title>Possesso Cittadinanza Generico</title>
+            <parent>jconon_application:aspects</parent>
+            <properties>
+                <property name="jconon_application:possesso_cittadinanza_text">
+                    <title>dichiaro di possedere la cittadinanza:</title>
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <atomic>true</atomic>
+                        <stored>false</stored>
+                        <tokenised>both</tokenised>
+                    </index>
+                </property>
+            </properties>
+        </aspect>
+        <aspect name="jconon_application:aspect_posizione_qualifica">
+            <title>Posizione e/o qualifica scientifica</title>
+            <parent>jconon_application:aspects</parent>
+            <properties>
+                <property name="jconon_application:posizione_qualifica_text">
+                    <title>dichiaro di ricoprire attualmente la seguente posizione e/o qualifica scientifica:</title>
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <atomic>true</atomic>
+                        <stored>false</stored>
+                        <tokenised>both</tokenised>
+                    </index>
+                </property>
+            </properties>
+        </aspect>
+
         <aspect name="jconon_application:aspect_categorie_riservatarie_art1">
             <title>Categorie riservatarie di cui all'articolo 1 della Legge 68/99</title>
             <parent>jconon_application:aspects</parent>

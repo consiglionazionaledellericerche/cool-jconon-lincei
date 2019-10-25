@@ -640,6 +640,22 @@
             <description>Attestati e ogni eventuale altro titolo ritenuto utile</description>
             <parent>jconon_attachment:document_multi</parent>
         </type>
+        <type name="jconon_pubblicazione:progetto_di_ricerca_benestare">
+            <title>Progetto di ricerca e benestare del responsabile scientifico e del direttore dell'Istituto o dipartimento</title>
+            <description>Progetto di ricerca e benestare del responsabile scientifico e del direttore dell'Istituto o dipartimento</description>
+            <parent>jconon_attachment:document_mono</parent>
+        </type>
+        <type name="jconon_pubblicazione:elenco_link">
+            <title>File elenco contenente i link per la consultazione dei lavori (titoli e pubblicazioni) attestati e altri eventuali titoli ritenuti utile (in formato pdf) indicati nella dichiarazione</title>
+            <description>File elenco contenente i link per la consultazione dei lavori (titoli e pubblicazioni) attestati e altri eventuali titoli ritenuti utile (in formato pdf) indicati nella dichiarazione</description>
+            <parent>jconon_attachment:document_mono</parent>
+        </type>
+        <type name="jconon_pubblicazione:lettera_presentazione_dottorato">
+            <title>Lettera di presentazione del Direttore dell’Istituto o del Dipartimento in cui è stato conseguito il Dottorato di Ricerca</title>
+            <description>Lettera di presentazione del Direttore dell’Istituto o del Dipartimento in cui è stato conseguito il Dottorato di Ricerca</description>
+            <parent>jconon_attachment:document_mono</parent>
+        </type>
+
         <type name="jconon_tesi_dottorato:attachment">
             <title>Tesi di dottorato</title>
             <description>Tesi di dottorato</description>
