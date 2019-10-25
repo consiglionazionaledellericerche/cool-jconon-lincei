@@ -1129,6 +1129,7 @@
             <properties>
                 <property name="jconon_application:possesso_cittadinanza_text">
                     <title>dichiaro di possedere la cittadinanza:</title>
+                    <description>class:span12</description>
                     <type>d:text</type>
                     <mandatory>true</mandatory>
                     <index enabled="true">
@@ -1145,6 +1146,7 @@
             <properties>
                 <property name="jconon_application:posizione_qualifica_text">
                     <title>dichiaro di ricoprire attualmente la seguente posizione e/o qualifica scientifica:</title>
+                    <description>class:span12</description>
                     <type>d:text</type>
                     <mandatory>true</mandatory>
                     <index enabled="true">

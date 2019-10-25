@@ -313,11 +313,9 @@
             <title>Curriculum Vitae</title>
             <description>Curriculum Vitae</description>
             <parent>jconon_attachment:document_mono</parent>
-            <!--
             <mandatory-aspects>
                 <aspect>jconon_attachment:generic_document</aspect>
             </mandatory-aspects>
-            -->
         </type>
         <type name="jconon_curriculum_vitae:attachment_not_required">
             <title>Curriculum Vitae non obbligatorio</title>
@@ -422,11 +420,9 @@
                     </index>
                 </property>
             </properties>
-            <!--
             <mandatory-aspects>
                 <aspect>jconon_attachment:generic_document</aspect>
             </mandatory-aspects>
-            -->
         </type>
         <type name="jconon_tesi_laurea:attachment">
             <title>Tesi di laurea</title>
@@ -467,11 +463,9 @@
                     </index>
                 </property>
             </properties>
-            <!--
             <mandatory-aspects>
                 <aspect>jconon_attachment:generic_document</aspect>
             </mandatory-aspects>
-            -->
         </type>
         <type name="jconon_allegato_generico:attachment">
             <title>Allegato generico Multiplo</title>
@@ -490,11 +484,9 @@
                     </index>
                 </property>
             </properties>
-            <!--
             <mandatory-aspects>
                 <aspect>jconon_attachment:generic_document</aspect>
             </mandatory-aspects>
-            -->
         </type>
         <type name="jconon_allegato_generico:attachment_mono">
             <title>Allegato generico Singolo</title>
@@ -540,21 +532,17 @@
                     <mandatory>true</mandatory>
                 </property>
             </properties>
-            <!--
             <mandatory-aspects>
                 <aspect>jconon_attachment:generic_document</aspect>
             </mandatory-aspects>
-            -->
         </type>
         <type name="jconon_dic_sost:attachment">
             <title>Modulo Dichiarazioni Sostitutive</title>
             <description>Modulo Dichiarazioni Sostitutive</description>
             <parent>jconon_attachment:document_mono</parent>
-            <!--
             <mandatory-aspects>
                 <aspect>jconon_attachment:generic_document</aspect>
             </mandatory-aspects>
-            -->
         </type>
         <type name="jconon_attachment:trattamento_dati_personali">
             <title>Modulo Trattamento Dati Personali</title>
@@ -634,26 +622,41 @@
             <title>Progetto di ricerca con benestare del responsabile della ricerca e del direttore dell'Istituto o dipartimento</title>
             <description>Progetto di ricerca con benestare del responsabile della ricerca e del direttore dell'Istituto o dipartimento</description>
             <parent>jconon_attachment:document_multi</parent>
+            <mandatory-aspects>
+                <aspect>jconon_attachment:generic_document</aspect>
+            </mandatory-aspects>
         </type>
         <type name="jconon_pubblicazione:attestati">
             <title>Attestati e ogni eventuale altro titolo ritenuto utile</title>
             <description>Attestati e ogni eventuale altro titolo ritenuto utile</description>
             <parent>jconon_attachment:document_multi</parent>
+            <mandatory-aspects>
+                <aspect>jconon_attachment:generic_document</aspect>
+            </mandatory-aspects>
         </type>
         <type name="jconon_pubblicazione:progetto_di_ricerca_benestare">
             <title>Progetto di ricerca e benestare del responsabile scientifico e del direttore dell'Istituto o dipartimento</title>
             <description>Progetto di ricerca e benestare del responsabile scientifico e del direttore dell'Istituto o dipartimento</description>
             <parent>jconon_attachment:document_mono</parent>
+            <mandatory-aspects>
+                <aspect>jconon_attachment:generic_document</aspect>
+            </mandatory-aspects>
         </type>
         <type name="jconon_pubblicazione:elenco_link">
             <title>File elenco contenente i link per la consultazione dei lavori (titoli e pubblicazioni) attestati e altri eventuali titoli ritenuti utile (in formato pdf) indicati nella dichiarazione</title>
             <description>File elenco contenente i link per la consultazione dei lavori (titoli e pubblicazioni) attestati e altri eventuali titoli ritenuti utile (in formato pdf) indicati nella dichiarazione</description>
             <parent>jconon_attachment:document_mono</parent>
+            <mandatory-aspects>
+                <aspect>jconon_attachment:generic_document</aspect>
+            </mandatory-aspects>
         </type>
         <type name="jconon_pubblicazione:lettera_presentazione_dottorato">
             <title>Lettera di presentazione del Direttore dell’Istituto o del Dipartimento in cui è stato conseguito il Dottorato di Ricerca</title>
             <description>Lettera di presentazione del Direttore dell’Istituto o del Dipartimento in cui è stato conseguito il Dottorato di Ricerca</description>
             <parent>jconon_attachment:document_mono</parent>
+            <mandatory-aspects>
+                <aspect>jconon_attachment:generic_document</aspect>
+            </mandatory-aspects>
         </type>
 
         <type name="jconon_tesi_dottorato:attachment">
@@ -766,31 +769,25 @@
                     </index>
                 </property>
             </properties>
-            <!--
             <mandatory-aspects>
                 <aspect>jconon_attachment:document_from_rdp</aspect>
             </mandatory-aspects>
-            -->
         </type>
         <type name="jconon_riammissione:attachment">
             <title>Provvedimento di riammissione</title>
             <description>Provvedimento di riammissione</description>
             <parent>jconon_attachment:document_mono</parent>
-            <!--
             <mandatory-aspects>
                 <aspect>jconon_attachment:document_from_rdp</aspect>
             </mandatory-aspects>
-            -->
         </type>
         <type name="jconon_rinuncia:attachment">
             <title>Rinuncia</title>
             <description>Rinuncia</description>
             <parent>jconon_attachment:document_mono</parent>
-            <!--
             <mandatory-aspects>
                 <aspect>jconon_attachment:document_from_rdp</aspect>
             </mandatory-aspects>
-            -->
         </type>
         <type name="jconon_comunicazione:attachment">
             <title>Comunicazioni al candidato</title>
