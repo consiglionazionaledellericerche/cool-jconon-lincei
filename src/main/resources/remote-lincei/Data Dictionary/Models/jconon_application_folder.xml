@@ -1176,6 +1176,27 @@
                 </property>
             </properties>
         </aspect>
+        <aspect name="jconon_application:aspect_aspettativa_dipendente">
+            <title>Aspettativa dipendente</title>
+            <parent>jconon_application:aspects</parent>
+            <properties>
+                <property name="jconon_application:fl_aspettativa_dipendente">
+                    <title>di essere dipendente pubblico o insegnante di ruolo della scuola ma che verrà posto in aspettativa senza assegni dal datore di lavoro per tutta la durata della borsa nel caso in cui risultasse vincitore del concorso</title>
+                    <type>d:boolean</type>
+                </property>
+            </properties>
+        </aspect>
+        <aspect name="jconon_application:aspect_no_borse">
+            <title>No Borse</title>
+            <parent>jconon_application:aspects</parent>
+            <properties>
+                <property name="jconon_application:fl_no_borse">
+                    <title>di non percepire altre borse attribuite da altri Enti, ne' assegni o sovvenzioni di analoga natura e neppure stipendi o retribuzioni di qualsiasi natura</title>
+                    <type>d:boolean</type>
+                </property>
+            </properties>
+        </aspect>
+
         <aspect name="jconon_application:aspect_categorie_riservatarie_art18">
             <title>Categorie riservatarie di cui all'articolo 18 della Legge 68/99</title>
             <parent>jconon_application:aspects</parent>

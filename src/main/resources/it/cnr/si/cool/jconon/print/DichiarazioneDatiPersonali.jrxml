@@ -235,19 +235,27 @@
 			<textField>
 				<reportElement key="staticText-40" style="FONT_Bold" x="0" y="3" width="514" height="31" uuid="d54e883a-7a66-4724-9256-2f67e1c25e95"/>
 				<textElement textAlignment="Center" verticalAlignment="Top" markup="none">
-					<font isBold="true" isUnderline="true"/>
+					<font size="12" isBold="true" isUnderline="false"/>
 				</textElement>
-				<textFieldExpression><![CDATA["INFORMATIVA SUL TRATTAMENTO DEI DATI PERSONALI RESA AI SENSI DELL'ART. 13 DEL REGOLAMENTO UE 2016/679"]]></textFieldExpression>
+				<textFieldExpression><![CDATA["INFORMATIVA SUL TRATTAMENTO DEI DATI PERSONALI"]]></textFieldExpression>
 			</textField>
 		</band>
-		<band height="22" splitType="Stretch">
+		<band height="73" splitType="Stretch">
 			<textField>
-				<reportElement key="staticText-40" style="FONT_Bold" x="0" y="3" width="514" height="15" uuid="305d7ec8-9537-44e9-a810-1ffec9573c1f"/>
-				<textElement textAlignment="Center" verticalAlignment="Top" markup="none">
-					<font isBold="true" isUnderline="false"/>
+				<reportElement key="staticText-40" style="FONT_Bold" x="5" y="3" width="509" height="15" uuid="305d7ec8-9537-44e9-a810-1ffec9573c1f"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font isBold="false" isUnderline="false"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Ai sensi dell'art. 13 del predetto Regolamento, La informiamo che:"]]></textFieldExpression>
+				<textFieldExpression><![CDATA["Gentile utente,"]]></textFieldExpression>
 			</textField>
+			<staticText>
+				<reportElement key="staticText-40" style="FONT_Bold" x="5" y="20" width="509" height="53" uuid="659f8118-67d2-4acf-b2e4-804e528b3642"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[La informiamo che dal 25 maggio 2018 si applica il Regolamento UE 2016/679 relativo alla protezione delle persone fisiche con riguardo al trattamento dei dati personali.
+Con questa informativa l'Accademia Nazionale dei Lincei illustra come utilizzerà i dati da Lei forniti e quali sono i diritti che Le sono riconosciuti dal Regolamento UE 2016/679. ]]></text>
+			</staticText>
 		</band>
 		<band height="20" splitType="Stretch">
 			<staticText>
