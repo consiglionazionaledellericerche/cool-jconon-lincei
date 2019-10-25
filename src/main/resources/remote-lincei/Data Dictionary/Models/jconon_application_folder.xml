@@ -1182,7 +1182,9 @@
             <properties>
                 <property name="jconon_application:fl_aspettativa_dipendente">
                     <title>di essere dipendente pubblico o insegnante di ruolo della scuola ma che verrà posto in aspettativa senza assegni dal datore di lavoro per tutta la durata della borsa nel caso in cui risultasse vincitore del concorso</title>
+                    <description>widget:ui.radio</description>
                     <type>d:boolean</type>
+                    <mandatory>true</mandatory>
                 </property>
             </properties>
         </aspect>
@@ -1192,7 +1194,9 @@
             <properties>
                 <property name="jconon_application:fl_no_borse">
                     <title>di non percepire altre borse attribuite da altri Enti, ne' assegni o sovvenzioni di analoga natura e neppure stipendi o retribuzioni di qualsiasi natura</title>
+                    <description>widget:ui.radio</description>
                     <type>d:boolean</type>
+                    <mandatory>true</mandatory>
                 </property>
             </properties>
         </aspect>
