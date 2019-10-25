@@ -112,7 +112,10 @@ catapult-deploy-image:
     - >
       curl --fail -s -X POST $CATAPULT_URL -H 'Content-type:application/json' --data '{"id":"'"$CI_PROJECT_PATH:$CI_COMMIT_REF_NAME"'", "git":true}'
   except:
-    - tags
+    variables:
+      - $CI_COMMIT_MESSAGE =~ /prepare release/ || $CI_COMMIT_MESSAGE =~ /prepare for next development iteration/
+    refs:
+      - tags
 
 #la release è opzionale e manuale.
 perform-maven-release-maven-central:
@@ -149,5 +152,8 @@ perform-maven-release-maven-central:
     - mvn release:clean release:prepare -Darguments="-Dgpg.passphrase=$GPG_PASSPHRASE -DskipTests" -Dresume=false -B $MAVEN_CLI_CENTRAL_OPTS
     - mvn release:perform -Darguments="-Dgpg.passphrase=$GPG_PASSPHRASE -DskipTests" -Dresume=false -B $MAVEN_CLI_CENTRAL_OPTS
   only:
-    - master
+    variables:
+      - $CI_COMMIT_MESSAGE !~ /prepare release/ && $CI_COMMIT_MESSAGE !~ /prepare for next development iteration/
+    refs:
+      - master
   when: manual
