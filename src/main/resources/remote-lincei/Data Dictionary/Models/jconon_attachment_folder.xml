@@ -658,6 +658,30 @@
                 <aspect>jconon_attachment:generic_document</aspect>
             </mandatory-aspects>
         </type>
+        <type name="jconon_pubblicazione:elenco_voti_esami_superati">
+            <title>Certificato o elenco voti esami superati</title>
+            <description>Certificato o elenco voti esami superati</description>
+            <parent>jconon_attachment:document_mono</parent>
+            <mandatory-aspects>
+                <aspect>jconon_attachment:generic_document</aspect>
+            </mandatory-aspects>
+        </type>
+        <type name="jconon_pubblicazione:allegati_obbligatori_bando">
+            <title>Allegati obbligatori richiesti dal bando</title>
+            <description>Allegati obbligatori richiesti dal bando</description>
+            <parent>jconon_attachment:document_multi</parent>
+            <mandatory-aspects>
+                <aspect>jconon_attachment:generic_document</aspect>
+            </mandatory-aspects>
+        </type>
+        <type name="jconon_pubblicazione:allegati_scelti_dal_candidato">
+            <title>Allegati scelti dal candidato</title>
+            <description>Allegati scelti dal candidato</description>
+            <parent>jconon_attachment:document_multi</parent>
+            <mandatory-aspects>
+                <aspect>jconon_attachment:generic_document</aspect>
+            </mandatory-aspects>
+        </type>
 
         <type name="jconon_tesi_dottorato:attachment">
             <title>Tesi di dottorato</title>

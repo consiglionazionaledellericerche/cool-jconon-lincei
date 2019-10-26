@@ -1194,7 +1194,6 @@
             <properties>
                 <property name="jconon_application:fl_no_borse">
                     <title>di non percepire altre borse attribuite da altri Enti, ne' assegni o sovvenzioni di analoga natura e neppure stipendi o retribuzioni di qualsiasi natura</title>
-                    <description>widget:ui.radio</description>
                     <type>d:boolean</type>
                     <mandatory>true</mandatory>
                 </property>

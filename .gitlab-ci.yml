@@ -114,8 +114,6 @@ catapult-deploy-image:
   except:
     variables:
       - $CI_COMMIT_MESSAGE =~ /prepare release/ || $CI_COMMIT_MESSAGE =~ /prepare for next development iteration/
-    refs:
-      - tags
 
 #la release è opzionale e manuale.
 perform-maven-release-maven-central:
