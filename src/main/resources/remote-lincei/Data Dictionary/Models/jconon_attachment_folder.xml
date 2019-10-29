@@ -313,9 +313,11 @@
             <title>Curriculum Vitae</title>
             <description>Curriculum Vitae</description>
             <parent>jconon_attachment:document_mono</parent>
+            <!--
             <mandatory-aspects>
                 <aspect>jconon_attachment:generic_document</aspect>
             </mandatory-aspects>
+            -->
         </type>
         <type name="jconon_curriculum_vitae:attachment_not_required">
             <title>Curriculum Vitae non obbligatorio</title>
@@ -420,9 +422,11 @@
                     </index>
                 </property>
             </properties>
+            <!--
             <mandatory-aspects>
                 <aspect>jconon_attachment:generic_document</aspect>
             </mandatory-aspects>
+            -->
         </type>
         <type name="jconon_tesi_laurea:attachment">
             <title>Tesi di laurea</title>
@@ -463,9 +467,11 @@
                     </index>
                 </property>
             </properties>
+            <!--
             <mandatory-aspects>
                 <aspect>jconon_attachment:generic_document</aspect>
             </mandatory-aspects>
+            -->
         </type>
         <type name="jconon_allegato_generico:attachment">
             <title>Allegato generico Multiplo</title>
@@ -484,9 +490,11 @@
                     </index>
                 </property>
             </properties>
+            <!--
             <mandatory-aspects>
                 <aspect>jconon_attachment:generic_document</aspect>
             </mandatory-aspects>
+            -->
         </type>
         <type name="jconon_allegato_generico:attachment_mono">
             <title>Allegato generico Singolo</title>
@@ -532,17 +540,21 @@
                     <mandatory>true</mandatory>
                 </property>
             </properties>
+            <!--
             <mandatory-aspects>
                 <aspect>jconon_attachment:generic_document</aspect>
             </mandatory-aspects>
+            -->
         </type>
         <type name="jconon_dic_sost:attachment">
             <title>Modulo Dichiarazioni Sostitutive</title>
             <description>Modulo Dichiarazioni Sostitutive</description>
             <parent>jconon_attachment:document_mono</parent>
+            <!--
             <mandatory-aspects>
                 <aspect>jconon_attachment:generic_document</aspect>
             </mandatory-aspects>
+            -->
         </type>
         <type name="jconon_attachment:trattamento_dati_personali">
             <title>Modulo Trattamento Dati Personali</title>
@@ -556,9 +568,11 @@
             <title>Modello Verifica Attivita</title>
             <description>Modello Verifica Attivita</description>
             <parent>jconon_attachment:document_mono</parent>
+            <!--
             <mandatory-aspects>
-                <aspect>jconon_attachment:document_not_required</aspect>
+                <aspect>jconon_attachment:generic_document</aspect>
             </mandatory-aspects>
+            -->
         </type>
         <type name="jconon_relazione_attivita_svolta:attachment">
             <title>Relazione Attivita Svolta</title>
@@ -577,9 +591,11 @@
                     </index>
                 </property>
             </properties>
+            <!--
             <mandatory-aspects>
-                <aspect>jconon_attachment:document_not_required</aspect>
+                <aspect>jconon_attachment:generic_document</aspect>
             </mandatory-aspects>
+            -->
         </type>
         <type name="jconon_pagamenti_diritti_segreteria:attachment">
             <title>Pagamenti diritti di segreteria</title>

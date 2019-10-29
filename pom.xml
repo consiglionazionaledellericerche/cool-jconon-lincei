@@ -41,7 +41,7 @@
         <dependency>
             <groupId>it.cnr.si.cool.jconon</groupId>
             <artifactId>cool-jconon-webapp-resources</artifactId>
-            <version>${parent.version}</version>
+            <version>${project.parent.version}</version>
         </dependency>
         <dependency>
             <groupId>com.hazelcast</groupId>
@@ -136,7 +136,7 @@
                                         <artifactItem>
                                             <groupId>it.cnr.si.cool.jconon</groupId>
                                             <artifactId>cool-jconon-webapp-resources</artifactId>
-                                            <version>${parent.version}</version>
+                                            <version>${project.parent.version}</version>
                                             <outputDirectory>${project.build.directory}/javascript-exploded
                                             </outputDirectory>
                                             <includes>**/*.js</includes>

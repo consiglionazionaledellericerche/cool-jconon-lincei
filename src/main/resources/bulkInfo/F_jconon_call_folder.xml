@@ -327,10 +327,15 @@
             <jsonvalidator digits="true"/>
         </formFieldProperty>
         <formFieldProperty
-                class="criteria-equals btn-block"
+                class="criteria-like btn-block"
                 parentGroupClass="btn-group-vertical"
                 name="disciplina"
-                property="root.jconon_call:disciplina"/>
+                property="root.jconon_call:disciplina">
+            <jsonlist>
+                <listElement defaultLabel="Scientifiche" key="S" label="label.jconon_call_disciplina.DS"/>
+                <listElement defaultLabel="Umanistiche" key="M" label="label.jconon_call_disciplina.DM"/>
+            </jsonlist>
+        </formFieldProperty>
         <formFieldProperty
                 class="criteria-gte span10"
                 label="label.jconon_call_da_data"
