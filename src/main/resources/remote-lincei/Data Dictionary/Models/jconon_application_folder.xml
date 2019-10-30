@@ -2327,7 +2327,7 @@
             <properties>
                 <property name="jconon_application:posizione_attualmente_ricoperta_text">
                     <title>Posizione o qualifica scientifica attualmente ricoperta:</title>
-                    <description>inputType:TEXTAREA class:vh-25</description>
+                    <description>inputType:TEXTAREA class:vh-25 span12</description>
                     <type>d:text</type>
                     <mandatory>true</mandatory>
                     <index enabled="true">
