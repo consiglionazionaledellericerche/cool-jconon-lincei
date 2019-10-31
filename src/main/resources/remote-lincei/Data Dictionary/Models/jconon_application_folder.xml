@@ -80,11 +80,11 @@
         <constraint name="jconon_application:anno_iscrizione_laurea_list" type="LIST">
             <parameter name="allowedValues">
                 <list>
-                    <value>primo</value>
-                    <value>secondo</value>
-                    <value>terzo</value>
-                    <value>quarto</value>
-                    <value>quinto</value>
+                    <value>Primo anno</value>
+                    <value>Secondo anno</value>
+                    <value>Terzo anno</value>
+                    <value>Quarto anno</value>
+                    <value>Quinto anno</value>
                 </list>
             </parameter>
         </constraint>
@@ -1692,7 +1692,7 @@
                 </property>
                 <property name="jconon_application:laurea_anno_accademico_corso">
                     <title>in </title>
-                    <description>c) class:span12</description>
+                    <description>c) class:span10</description>
                     <type>d:text</type>
                     <mandatory>true</mandatory>
                     <index enabled="true">
@@ -1706,7 +1706,7 @@
                 </property>
                 <property name="jconon_application:laurea_anno_accademico_istituto">
                     <title>presso:</title>
-                    <description>d) class:span12</description>
+                    <description>d) class:span10</description>
                     <type>d:text</type>
                     <mandatory>true</mandatory>
                     <index enabled="true">
