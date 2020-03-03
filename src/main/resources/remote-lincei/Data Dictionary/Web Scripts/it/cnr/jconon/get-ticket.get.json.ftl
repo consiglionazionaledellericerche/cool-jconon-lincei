@@ -1,3 +1,0 @@
-{
-    "ticket" : ${jsonUtils.toJSONString(ticket)}
-}
