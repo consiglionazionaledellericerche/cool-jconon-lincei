@@ -30,6 +30,8 @@
     <namespaces>
         <namespace uri="http://www.cnr.it/model/jconon_call/cmis"
                    prefix="jconon_call"/>
+        <namespace uri="http://www.cnr.it/model/jconon_call/tind/cmis"
+            prefix="jconon_call_tind" />                   
     </namespaces>
     <constraints>
         <constraint name="jconon_call:elenco_tipo_selezione_values" type="LIST">
@@ -52,6 +54,36 @@
                     <value>Inglese</value>
                     <value>Spagnolo</value>
                     <value>Tedesco</value>
+                </list>
+            </parameter>
+        </constraint>
+        <constraint name="jconon_call:elenco_profilo_livello_values" type="LIST">
+            <parameter name="allowedValues">
+                <list>
+                    <value>Operatore di Amministrazione VIII livello</value>
+                    <value>Operatore di Amministrazione VII livello</value>
+                    <value>Operatore Tecnico VIII livello</value>
+                    <value>Operatore Tecnico VII livello</value>
+                    <value>Operatore Tecnico VI livello</value>
+                    <value>Collaboratore di Amministrazione VII livello</value>
+                    <value>Collaboratore di Amministrazione VI livello</value>
+                    <value>Collaboratore di Amministrazione V livello</value>
+                    <value>Collaboratore tecnico enti di ricerca VI livello</value>
+                    <value>Collaboratore tecnico enti di ricerca V livello</value>
+                    <value>Collaboratore tecnico enti di ricerca IV livello</value>
+                    <value>Funzionario di Amministrazione V livello</value>
+                    <value>Funzionario di Amministrazione IV livello</value>
+                    <value>Ricercatore III livello</value>
+                    <value>Tecnologo III livello</value>
+                    <value>I Ricercatore II livello</value>
+                    <value>I Tecnologo II livello</value>
+                    <value>Dirigente di Ricerca I livello</value>
+                    <value>Dirigente Tecnologo I livello</value>
+                    <value>Ricercatore/Tecnologo</value>
+                    <value>Dirigente II Fascia</value>
+                    <value>Livelli IV-VIII</value>
+                    <value>Livelli IV-VII</value>
+                    <value>Componente Consiglio di Amministrazione</value>
                 </list>
             </parameter>
         </constraint>
@@ -449,6 +481,27 @@
                 <aspect>jconon_call:aspect_tipo_selezione</aspect>
             </mandatory-aspects>
         </type>
+        <type name="jconon_call_tind:folder_concorsi_pubblici">
+            <title>Concorsi Pubblici</title>
+            <description>Inserisci un nuovo Concorsi Pubblic0</description>
+            <parent>jconon_call:folder</parent>
+            <overrides>
+                <property name="jconon_call:numero_posti">
+                    <mandatory>true</mandatory>
+                </property>
+                <property name="jconon_call:sede">
+                    <mandatory>true</mandatory>
+                </property>
+                <property name="jconon_call:struttura_destinataria">
+                    <mandatory>true</mandatory>
+                </property>
+            </overrides>
+            <mandatory-aspects>
+                <aspect>jconon_call:aspect_gu</aspect>
+                <aspect>jconon_call:aspect_inquadramento</aspect>
+                <aspect>jconon_call:aspect_tipo_selezione</aspect>              
+            </mandatory-aspects>
+        </type> 
     </types>
     <aspects>
         <aspect name="jconon_call:can_submit_application">
@@ -481,6 +534,50 @@
                     </index>
                     <constraints>
                         <constraint ref="jconon_call:elenco_tipo_selezione_values"/>
+                    </constraints>
+                </property>
+            </properties>
+        </aspect>
+        <aspect name="jconon_call:aspect_gu">
+            <title>Dati Gazzetta Ufficiale</title>
+            <properties>
+                <property name="jconon_call:numero_gu">
+                    <title>Numero Gazzetta Ufficiale</title>
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <atomic>true</atomic>
+                        <stored>false</stored>
+                        <tokenised>both</tokenised>
+                    </index>                    
+                </property>
+                <property name="jconon_call:data_gu_index">
+                    <title>Numero Gazzetta Ufficiale</title>
+                    <type>d:datetime</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <atomic>true</atomic>
+                        <stored>false</stored>
+                        <tokenised>both</tokenised>
+                    </index>
+                </property>
+            </properties>
+        </aspect>       
+        <aspect name="jconon_call:aspect_inquadramento">
+            <title>Inquadramento</title>
+            <properties>
+                <property name="jconon_call:profilo">
+                    <title>Profilo</title>
+                    <description>Profilo</description>
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <atomic>true</atomic>
+                        <stored>false</stored>
+                        <tokenised>both</tokenised>
+                    </index>
+                    <constraints>
+                        <constraint ref="jconon_call:elenco_profilo_livello_values" />
                     </constraints>
                 </property>
             </properties>
