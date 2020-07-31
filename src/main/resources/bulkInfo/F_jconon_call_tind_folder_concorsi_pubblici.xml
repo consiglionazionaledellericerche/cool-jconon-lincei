@@ -24,9 +24,6 @@
     <form name="affix_sezione_1" override="true">
         <formFieldProperty name="codice"/>
         <formFieldProperty name="numero_posti"/>
-        <formFieldProperty name="aspect_macro_call"/>
-        <formFieldProperty name="numero_max_domande"/>
-        <formFieldProperty name="path_macro_call"/>
         <formFieldProperty name="descrizione"/>
         <formFieldProperty name="descrizione_en"/>
         <formFieldProperty name="descrizione_ridotta"/>
