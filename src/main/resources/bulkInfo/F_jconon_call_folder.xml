@@ -372,7 +372,6 @@
         </formFieldProperty>
     </form>
 
-
     <columnFieldProperty isExportColumn="false" label="label.column.jconon_call_edit" name="editCall"/>
     <columnFieldProperty property="cmis:objectId" name="objectId" inSelect="false"/>
     <columnFieldProperty class="sort" i18nExportMessage="true" i18nMessage="true" label="label.column.jconon_call_type"
@@ -410,6 +409,7 @@
         <columnFieldProperty name="requisiti"/>
         <columnFieldProperty name="requisiti_link_en"/>
         <columnFieldProperty name="requisiti_en"/>
+        <columnFieldProperty inSelect="false" name="profilo" property="jconon_call:profilo"/>
         <columnFieldProperty inSelect="false" name="elenco_macroaree" property="jconon_call:elenco_macroaree"/>
         <columnFieldProperty inSelect="false" name="elenco_settori_tecnologici"
                              property="jconon_call:elenco_settori_tecnologici"/>
@@ -435,6 +435,7 @@
         <columnFieldProperty name="requisiti"/>
         <columnFieldProperty name="requisiti_link_en"/>
         <columnFieldProperty name="requisiti_en"/>
+        <columnFieldProperty inSelect="false" name="profilo" property="jconon_call:profilo"/>
         <columnFieldProperty inSelect="false" name="elenco_macroaree" property="jconon_call:elenco_macroaree"/>
         <columnFieldProperty inSelect="false" name="elenco_settori_tecnologici"
                              property="jconon_call:elenco_settori_tecnologici"/>
