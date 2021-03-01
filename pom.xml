@@ -22,7 +22,7 @@
     <parent>
         <groupId>it.cnr.si.cool.jconon</groupId>
         <artifactId>cool-jconon-parent</artifactId>
-        <version>4.3.13</version>
+        <version>4.6.4</version>
     </parent>
 
     <artifactId>cool-jconon-lincei</artifactId>
@@ -209,7 +209,7 @@
                             <addClasspath>true</addClasspath>
                         </manifest>
                         <manifestEntries>
-                            <Dependencies>org.dom4j,javax.mail.api</Dependencies>      
+                            <Dependencies>org.dom4j,javax.mail.api</Dependencies>
                             <Specification-Title>${project.name}</Specification-Title>
                             <Specification-Version>${project.version}</Specification-Version>
                             <Implementation-Version>${project.version}</Implementation-Version>
