@@ -6,7 +6,7 @@ cool-jconon-lincei:
   - LANG=it_IT.UTF-8
   - LANGUAGE=it_IT:it
   - LC_ALL=it_IT.UTF-8
-  - REPOSITORY_BASE_URL=http://as4dock.si.cnr.it:1804/alfresco/
+  - REPOSITORY_BASE_URL=http://as1dock.si.cnr.it:8080/alfresco/
   - MAIL_FROM_DEFAULT=accademiadeilincei@cnr.it
   - SERVICE_TAGS=webapp
   - SERVICE_NAME=##{SERVICE_NAME}##
