@@ -21,6 +21,8 @@
 
     <cmisImplementsName name="P:jconon_call:aspect_lingue_da_conoscere"/>
     <cmisImplementsName name="P:jconon_call:aspect_punteggi"/>
+    <cmisImplementsName name="P:jconon_lincei_materie:aspect_call_discipline_umanistiche"/>
+    <cmisImplementsName name="P:jconon_lincei_materie:aspect_call_discipline_scientifiche"/>
 
     <fieldProperty class="input-xxlarge" inputType="TEXT" label="label.jconon_call_codice" name="codice"
                    property="jconon_call:codice" tooltip="tooltip.jconon_call_codice">
@@ -173,6 +175,22 @@
         </jsonlist>
         <jsonvalidator requiredWidget="true"/>
     </fieldProperty>
+    <fieldProperty inputType="SELECT"
+                   label="label.jconon_lincei_materie_call_elenco_discipline_umanistiche"
+                   class="multiselect input-xlarge"
+                   name="discipline_umanistiche"
+                   property="jconon_lincei_materie:call_elenco_discipline_umanistiche"
+                   multiple="true"
+                   widget="ui.select">
+    </fieldProperty>
+    <fieldProperty inputType="SELECT"
+                   label="label.jconon_lincei_materie_call_elenco_discipline_scientifiche"
+                   class="multiselect input-xlarge"
+                   name="discipline_scientifiche"
+                   property="jconon_lincei_materie:call_elenco_discipline_scientifiche"
+                   multiple="true"
+                   widget="ui.select">
+    </fieldProperty>
 
     <formFieldProperty name="codice"/>
     <formFieldProperty name="descrizione"/>
@@ -233,6 +251,8 @@
         <formFieldProperty name="blocco_invio_domande_message"/>
     </form>
     <form name="affix_sezione_3">
+        <formFieldProperty name="discipline_umanistiche"/>
+        <formFieldProperty name="discipline_scientifiche"/>
         <formFieldProperty name="elenco_aspects"/>
         <formFieldProperty name="elenco_association"/>
     </form>
