@@ -514,8 +514,8 @@ define(['jquery', 'header', 'i18n', 'cnr/cnr.ui', 'cnr/cnr.bulkinfo', 'json!comm
           }
           if (item.name === 'application_elenco_discipline_scientifiche') {
             var jsonlist = [];
-            if (call["jconon_lincei_materie:call_application_elenco_discipline_scientifiche"]) {
-              $.each(call["jconon_lincei_materie:call_application_elenco_discipline_scientifiche"], function (index, el) {
+            if (call["jconon_lincei_materie:call_elenco_discipline_scientifiche"]) {
+              $.each(call["jconon_lincei_materie:call_elenco_discipline_scientifiche"], function (index, el) {
                 jsonlist.push({
                   "key" : el,
                   "label" : el,
