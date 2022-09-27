@@ -20,6 +20,8 @@
     <cmisImplementsName name="P:jconon_call:aspect_gu"/>
     <cmisImplementsName name="P:jconon_call:aspect_inquadramento"/>
     <cmisImplementsName name="P:jconon_call:aspect_punteggi"/>
+    <cmisImplementsName name="P:jconon_lincei_materie:aspect_call_discipline_umanistiche"/>
+    <cmisImplementsName name="P:jconon_lincei_materie:aspect_call_discipline_scientifiche"/>
 
     <form name="affix_sezione_1" override="true">
         <formFieldProperty name="codice"/>
