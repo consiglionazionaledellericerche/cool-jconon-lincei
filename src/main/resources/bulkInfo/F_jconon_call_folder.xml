@@ -255,6 +255,7 @@
         <formFieldProperty name="discipline_scientifiche"/>
         <formFieldProperty name="elenco_aspects"/>
         <formFieldProperty name="elenco_association"/>
+        <formFieldProperty name="numero_max_prodotti"/>
     </form>
     <form name="affix_sezione_4">
         <formFieldProperty name="punteggio_1"/>
