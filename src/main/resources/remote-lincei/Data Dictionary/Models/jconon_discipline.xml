@@ -47,6 +47,7 @@
 					<value>Scienze Filosofiche</value>
 					<value>Scienze giuridiche</value>
 					<value>Scienze sociali e politiche</value>
+					<value>Scienze sociali</value>
 				</list>
 			</parameter>
 		</constraint>
@@ -66,6 +67,7 @@
 					<value>Geofisica</value>
 					<value>Geodesia</value>
 					<value>Scienze biologiche</value>
+					<value>Ambiente</value>
 				</list>
 			</parameter>
 		</constraint>

@@ -203,6 +203,27 @@
                         <tokenised>both</tokenised>
                     </index>
                 </property>
+                <property name="jconon_call:data_inizio_invio_domande">
+                    <title>Data iniziale di invio domande</title>
+                    <description>Data iniziale di invio domande</description>
+                    <type>d:datetime</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <atomic>true</atomic>
+                        <stored>false</stored>
+                        <tokenised>both</tokenised>
+                    </index>
+                </property>
+                <property name="jconon_call:data_fine_invio_domande">
+                    <title>Data finale di invio domande</title>
+                    <description>Data finale di invio domande</description>
+                    <type>d:datetime</type>
+                    <index enabled="true">
+                        <atomic>true</atomic>
+                        <stored>false</stored>
+                        <tokenised>both</tokenised>
+                    </index>
+                </property>
                 <property name="jconon_call:data_inizio_invio_domande_index">
                     <title>Data iniziale di invio domande</title>
                     <description>Data iniziale di invio domande</description>
@@ -363,6 +384,20 @@
                     <mandatory>false</mandatory>
                     <multiple>true</multiple>
                 </property>
+                <property name="jconon_call:elenco_aspects_sezione_4">
+                    <title>Elenco Aspect da inserire in Sezione 4</title>
+                    <description>Inserire l'elenco degli aspect per la Sezione 4</description>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <multiple>true</multiple>
+                </property>
+                <property name="jconon_call:elenco_aspects_sezione_5">
+                    <title>Elenco Aspect da inserire in Sezione 5</title>
+                    <description>Inserire l'elenco degli aspect per la Sezione 4</description>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <multiple>true</multiple>
+                </property>
                 <property name="jconon_call:num_giorni_mail_sollecito">
                     <title>Indica il numero di giorni precedenti alla scadenza per inviare la mail di sollecito</title>
                     <description>Indica il numero di giorni precedenti alla scadenza per inviare la mail di sollecito</description>
@@ -460,6 +495,17 @@
                     <title>Disciplina</title>
                     <description>Disciplina</description>
                     <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="true">
+                        <atomic>true</atomic>
+                        <stored>false</stored>
+                        <tokenised>both</tokenised>
+                    </index>
+                </property>
+                <property name="jconon_call:eta_massima">
+                    <title>Età massima del candidato</title>
+                    <description>Età massima del candidato alla scadenza del bando</description>
+                    <type>d:int</type>
                     <mandatory>false</mandatory>
                     <index enabled="true">
                         <atomic>true</atomic>
@@ -586,7 +632,7 @@
                         <atomic>true</atomic>
                         <stored>false</stored>
                         <tokenised>both</tokenised>
-                    </index>                    
+                    </index>
                 </property>
                 <property name="jconon_call:data_gu_index">
                     <title>Numero Gazzetta Ufficiale</title>
@@ -598,8 +644,41 @@
                         <tokenised>both</tokenised>
                     </index>
                 </property>
+                <property name="jconon_call:new_numero_gu">
+                    <title>Numero Gazzetta Ufficiale</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <atomic>true</atomic>
+                        <stored>false</stored>
+                        <tokenised>both</tokenised>
+                    </index>
+                </property>
+                <property name="jconon_call:new_data_gu">
+                    <title>Numero Gazzetta Ufficiale</title>
+                    <type>d:datetime</type>
+                    <index enabled="true">
+                        <atomic>true</atomic>
+                        <stored>false</stored>
+                        <tokenised>both</tokenised>
+                    </index>
+                </property>
             </properties>
-        </aspect>       
+        </aspect>
+        <aspect name="jconon_call:aspect_inpa">
+            <title>Dati Portale inPA</title>
+            <properties>
+                <property name="jconon_call:data_pubblicazione_inpa">
+                    <title>Data pubblicazione inPA</title>
+                    <type>d:datetime</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <atomic>true</atomic>
+                        <stored>false</stored>
+                        <tokenised>both</tokenised>
+                    </index>
+                </property>
+            </properties>
+        </aspect>
         <aspect name="jconon_call:aspect_inquadramento">
             <title>Inquadramento</title>
             <properties>

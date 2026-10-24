@@ -4,32 +4,46 @@
 			<td>
 				{{declare "data_gu_format" data_gu}}
 				{{datify "data_gu_format" "DD/MM/YYYY"}}
-				<strong>{{i18n objectTypeId}}</strong><br/>
+                {{declare "new_data_gu_format" new_data_gu}}
+                {{datify "new_data_gu_format" "DD/MM/YYYY"}}
+                {{declare "data_pubblicazione_inpa_format" data_pubblicazione_inpa}}
+                {{datify "data_pubblicazione_inpa_format" "DD/MM/YYYY"}}
+                <strong>{{i18n objectTypeId}}</strong><br/>
 				{{#if profilo}}
 					{{i18n "label.th.jconon_bando_profilo"}}: {{profilo}}<br/>
 				{{/if}}
                 {{#if disciplina}}
                     {{i18n "label.jconon_call_disciplina"}}: <strong>{{i18nConcatArgs "label.jconon_call_disciplina." disciplina}}</strong><br/>
                 {{/if}}
+				{{#if elenco_macroaree}}
+					{{i18n "label.th.jconon_bando_elenco_macroaree"}}: <strong>{{displayList elenco_macroaree}}</strong><br/>
+				{{/if}}
 				{{#if elenco_settori_tecnologici}}
 					{{i18n "label.th.jconon_bando_elenco_settori_tecnologici"}}: <strong>{{displayList elenco_settori_tecnologici}}</strong><br/>
 				{{/if}}
 				{{#if sede}}
-					{{i18n "label.th.jconon_bando_struttura_di_riferimento"}}: <strong>{{sede}}</strong><br/>
+					{{i18n "label.th.jconon_bando_struttura_di_riferimento"}}: <strong>{{{i18nDisplay sede sede_en}}}</strong><br/>
+				{{/if}}
+				{{#if descrizione_ad_smr}}
+					{{i18n "label.th.jconon_bando_descrizione_ad_smr"}}: <strong>{{descrizione_ad_smr}}</strong><br/>
 				{{/if}}
 				{{#if struttura_destinataria}}
-					{{i18n "label.th.jconon_bando_struttura_destinataria"}}: <strong>{{struttura_destinataria}}</strong><br/>
+					{{i18n "label.th.jconon_bando_struttura_destinataria"}}: <strong>{{{i18nDisplay struttura_destinataria struttura_destinataria_en}}}</strong><br/>
 				{{/if}}
 				<span>{{i18n "label.th.jconon_bando_codice"}}: <strong>{{{code codice codice 'code' descrizione descrizione_en objectId}}}</strong></span>,
 				{{#ifCond objectTypeId "F:jconon_call_mobility_open:folder"}}
-					{{i18n "label.th.jconon_bando_data_inizio_invio_domande"}}: {{date data_inizio_invio_domande "DD/MM/YYYY HH:mm:ss"}}				
+					{{i18n "label.th.jconon_bando_data_inizio_invio_domande"}}: {{date data_inizio_invio_domande "DD/MM/YYYY HH:mm:ss"}}
 				{{/ifCond}}
 				{{#if numero_gu}}
-					{{i18n "label.th.jconon_bando_numero_ud" numero_gu "data_gu_format"}},
+                    {{i18n "label.th.jconon_bando_numero_ud" numero_gu "data_gu_format"}},
 				{{/if}}
-				{{#if data_fine_invio_domande}}
-				{{i18n "label.th.jconon_bando_data_scadenza"}}: {{date data_fine_invio_domande "DD/MM/YYYY HH:mm:ss"}}
+                {{#if data_pubblicazione_inpa}}
+                    {{i18n "label.th.jconon_bando_data_pubblicazione_inpa" "data_pubblicazione_inpa_format"}},
+                {{/if}}
+				{{#if data_fine_invio_domande_initial}}
+				    {{i18n "label.th.jconon_bando_data_scadenza"}}: {{date data_fine_invio_domande_initial "DD/MM/YYYY HH:mm:ss"}}
 				{{/if}}
+                <span id="prorogation-{{objectId}}"></span>
 				<br/>
 				{{#if numero_posti}}
 				{{i18n "label.th.jconon_bando_numero_posti"}}: {{numero_posti}},
@@ -39,6 +53,12 @@
 				{{/if}}
                 {{#if requisiti_link}}
 				    {{i18n "label.th.jconon_bando_elenco_titoli_studio"}}: {{{code requisiti_link requisiti_link_en 'requirements' requisiti requisiti_en}}}
+                {{/if}}
+				{{#ifCond objectTypeId "F:jconon_call_mobility_open:folder"}}
+					{{{descrizione_ridotta}}}
+				{{/ifCond}}
+                {{#if data_pubbl_graduatoria}}
+				    {{i18n "label.jconon_call_pubbl_graduatoria"}}: {{date data_pubbl_graduatoria "DD/MM/YYYY"}}
                 {{/if}}
 				{{#if descrizione_ridotta}}
                     <br>{{i18n "label.jconon_call_descrizione_ridotta"}}:&nbsp;<div style="display: -webkit-inline-box">{{{descrizione_ridotta}}}</div>

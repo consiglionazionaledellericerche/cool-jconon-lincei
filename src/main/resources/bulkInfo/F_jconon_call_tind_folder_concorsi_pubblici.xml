@@ -22,6 +22,7 @@
     <cmisImplementsName name="P:jconon_call:aspect_punteggi"/>
     <cmisImplementsName name="P:jconon_lincei_materie:aspect_call_discipline_umanistiche"/>
     <cmisImplementsName name="P:jconon_lincei_materie:aspect_call_discipline_scientifiche"/>
+    <cmisImplementsName join="false" name="P:jconon_call_aspect_winner:aspect"/>
 
     <form name="affix_sezione_1" override="true">
         <formFieldProperty name="codice"/>
@@ -40,8 +41,8 @@
         <formFieldProperty name="requisiti_link_en"/>
         <formFieldProperty name="requisiti"/>
         <formFieldProperty name="requisiti_en"/>
-        <formFieldProperty name="data_inizio_invio_domande"/>
-        <formFieldProperty name="data_fine_invio_domande"/>
+        <formFieldProperty name="data_inizio_invio_domande_initial"/>
+        <formFieldProperty name="data_fine_invio_domande_initial"/>
     </form>
 
 </bulkInfo>
